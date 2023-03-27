@@ -1,0 +1,419 @@
+<style>
+  .container {
+  background-color: #E71C53;
+  border-radius: 0 0 50% 50%;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height:100px;
+  
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+.logo {
+  margin-right: 20px;
+  margin-top:-50px;
+  
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-top:-50px;
+}
+
+.icons i {
+  font-style:bold;
+  
+  
+}
+
+
+
+.informasi {
+  display: flex;
+  background-color: #ffff;
+  padding: 5px;
+  border-radius: 12px;
+  
+  width: 90%; /*ubah menjadi 100%*/
+  justify-content: space-between; /*tambahkan property ini*/
+  margin-top:-55px;
+  margin-left: 19px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Tambahkan baris ini*/
+  font-size:12px;
+}
+
+
+.saldo {
+  font-size: 10px;
+  margin-left:10px;
+}
+.saldo p{
+	font-weight:bold; 
+	color:#E71C53;
+	font-size:15px;
+	}
+.iconinfo {
+  text-align: center;
+  margin-top:10px;
+  margin-right:15px;
+  height:20px;
+}
+
+.icon-deposit {
+  margin-right: 40px;
+}
+
+.icon-kirim {
+  margin-right: 20px;
+}
+
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width:90%;
+  border-radius: 15px;
+  top: 15px;
+  margin: auto;
+  box-shadow: 0 0  10px rgba(0, 0, 0, 0.2); /*Tambahkan baris ini*/
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 100%;
+  height: 150px;
+  scroll-snap-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ikon1{
+	height:25px;
+	width:40px;
+	position: relative;
+	margin-right:12px;
+	top:-5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /*Tambahkan baris ini*/
+	border-radius:5px;
+	}
+	
+	.ikon2{
+		height:25px;
+		width:40px;
+	position: relative;
+	margin-left: 50px;
+	top:-30px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /*Tambahkan baris ini*/
+	border-radius:5px;
+		
+		}
+		
+		
+.produk {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.kategori {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.kategori a {
+  text-decoration: none;
+  
+}
+
+.kategori .imgmenu {
+  border-radius: 15px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  box-shadow: 1px 1px 1px 1px rgba(0.1, 0, 0, 0.1);
+}
+
+
+.kategori p {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.text1 {
+	margin-top:30px;
+	margin-left:21px;
+	display: flex;
+	
+	}
+	.text1 p {
+	font-weight:bold;
+		}
+		
+.text2 {
+	margin-top:10px;
+	margin-left:21px;
+	display: flex;
+	
+	}
+	.text2 {
+	font-weight:bold;
+		}
+		
+      a {
+            color: #18509a;
+        }
+
+        a:hover {
+            -webkit-tap-highlight-color: transparent;
+            border: none;
+            text-decoration: none;
+            color: #18509a;
+        }
+
+        .bottom-panel {
+            margin: 0 25px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .tab {
+            overflow: hidden;
+            border: none;
+            background-color: #fff;
+            margin-left: 10px;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            width: 23%;
+            font-weight: 500;
+            background: rgba(213, 213, 213, 0.3);
+            outline: none;
+            cursor: pointer;
+            transition: 0.3s;
+            color: #5b5a5c;
+            font-size: 13px;
+            border-radius: 50px;
+            margin: 2%;
+            padding: 7px;
+            font-family: 'Verdana', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .tabcontent {
+            border-top: none;
+            margin: 20px 0;
+            transition: 400ms ease-in-out;
+            transform: translateX(100%) scale(0);
+            left: 100%;
+            position: absolute;
+        }
+
+        .tabcontent.active {
+            position: static;
+            display: block;
+            transform: translateX(0) scale(1);
+            flex-shrink: 0;
+            width: 100%;
+        }
+
+        .link-bottom-panel {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            row-gap: 10px;
+            color: #333;
+            font-size: 11.7px;
+            font-weight: 600;
+            font-family: Arial;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .link-bottom-panel:hover {
+            text-decoration: none;
+        }
+
+        .icon-bottom-panel {
+            height: 45px;
+            width: 45px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+
+        hr {
+            border: none;
+            height: 8px;
+            color: #eaeaea;
+            background-color: #F4F4F4;
+        }
+
+        /* card */
+
+        .title__el__menarik {
+            color: #18509a;
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 16px;
+            margin-bottom: 8px;
+        }
+
+        .paragraph__el__update {
+            color: rgb(104, 104, 104);
+            font-size: 10px;
+            margin-top: 12px;
+            margin-left: 14px;
+        }
+
+        .cards__header__menarik {
+            margin-top: 15px;
+            display: grid;
+            margin: 13px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .card__body__menarik {
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 9px rgba(0, 0, 0, 0.11);
+            height: 228px;
+            position: relative;
+        }
+
+        .image--card--body--menarik {
+            object-fit: cover;
+            width: 100%;
+            height: 85px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .text__card__body__menarik {
+            padding: 15px 10px 20px;
+        }
+
+        .title__card__body__menarik {
+            margin: 0;
+            color: rgb(73, 73, 73);
+            font-size: 12px;
+        }
+
+        .paragraph__card__body__menarik {
+            margin: 8px 0;
+            color: rgb(104, 104, 104);
+            font-size: 10px;
+            letter-spacing: 0.1px;
+            line-height: 13px;
+        }
+
+        .link__card__body__menarik {
+            color: #18509a;
+            text-decoration: none;
+            font-size: 12.4px;
+            text-align: center;
+            display: block;
+            margin-top: 16px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+            right: 10px;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .container__cards__menarik {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .box2 {
+            background-color: #18509a;
+            color: #000;
+            font-family: "Poppins";
+            border-radius: 10px;
+            border: 1px solid rgb (233, 233, 233), ;
+            padding: 5px;
+            margin: 2%;
+            margin-bottom: 10px;
+            width: 96%;
+            height: 28px;
+            float: left;
+            font-size: 10px;
+            position: relative;
+            z-index: 2;
+            overflow: ellipsis;
+        }
+
+        .box {
+            background-color: #18509a;
+            border-radius: 10px;
+            border: 1px solid rgb (233, 233, 233), ;
+            padding: 5px;
+            margin: 2%;
+            margin-bottom: 10px;
+            width: 96%;
+            height: 32px;
+            float: left;
+            position: relative;
+        }
+
+        .box p {
+            color: #fff;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+
+        }
+
+        .imgicon {
+            border-radius: 100px;
+            width: 8%;
+            height: auto;
+            padding: 0px;
+            background-color: transparent;
+            float: left;
+            margin-top: -5px;
+        }
+
+        marquee {
+            color: #fff;
+            font-family: 'urbanist', sans-serif;
+            font-size: 13px;
+            margin-left: 0%;
+            height: 2%;
+            text-align: left;
+            margin-top: -1px;
+            margin-bottom: 0px;
+            border-radius: 5px;
+            width: 92%
+        }
+
+        .card-lain {
+            font-size: small;
+        }
+		
+
+</style>
